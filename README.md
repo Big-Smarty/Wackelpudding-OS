@@ -12,7 +12,7 @@ cd Wackelpudding-OS
 
 sudo mkarchiso -v -w working-directory Wackelpudding\ OS/
 
-This will take like 10 to 30 minutes depending on your CPU and the amount of RAM you have (on my system [10 gb RAM r5 3550h] it takes like 25 minutes).
+This will take like 10 to 30 minutes depending on your CPU and the amount of RAM you have (on my system [10 GB RAM Ryzen 5 3550h] it takes like 25 minutes).
 The ISO will be in an "out/" folder which was generated automatically in the directory you were in when you ran the command.
 
 To then run the completed ISO, given you're in the same directory as when running the command from before, run this:

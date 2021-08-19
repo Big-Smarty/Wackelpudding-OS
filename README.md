@@ -4,6 +4,8 @@ Currently I'm the only developer working on it since... yesterday lol.
 My plans currently are to get the calamares installer working in a way like with arco and endeavour (as in having it install chosen packages).
 If you wanna contribute to this project join this discord server: https://discord.gg/BJjWJZXbER
 
+The username is "Pro" and the password is "pro" (originally this was meant to be called Pro OS)
+
 You can also join this server if you have questions or problems with it or whatever
 
 To build Wackelpudding OS, run this:

@@ -1,27 +1,40 @@
 # Wackelpudding-OS
-Wackelpudding OS is an Arch based linux distro with support for chaotic-aur.
-Currently I'm the only developer working on it since... yesterday lol.
-My plans currently are to get the calamares installer working in a way like with arco and endeavour (as in having it install chosen packages).
-If you wanna contribute to this project join this discord server: https://discord.gg/BJjWJZXbER
 
-The username is "Pro" and the password is "pro" (originally this was meant to be called Pro OS)
+Wackelpudding OS is an Arch-based Linux distro with support for the
+[Chaotic-AUR](https://aur.chaotic.cx/).
 
-You can also join this server if you have questions or problems with it or whatever
+It is early-stage software and currently maintained by a single developer.
+The main goal right now is getting the Calamares installer to work the way it
+does on ArcoLinux and EndeavourOS, meaning it should let you pick the packages
+that get installed.
 
-To build Wackelpudding OS, run this:
+If you want to contribute or have questions, join the Discord server:
+https://discord.gg/BJjWJZXbER
 
+The live environment user is `Pro` with password `pro`. The name is leftover
+from when the project was going to be called Pro OS.
+
+## Building
+
+Requirements: `mkarchiso`, `qemu` (for testing), and a working Arch install.
+
+```
 git clone https://github.com/Big-Smarty/Wackelpudding-OS.git
-
 cd Wackelpudding-OS
-
 sudo mkarchiso -v -w working-directory Wackelpudding\ OS/
+```
 
-This will take like 10 to 30 minutes depending on your CPU and the amount of RAM you have (on my system [10 GB RAM Ryzen 5 3550h] it takes like 25 minutes).
-The ISO will be in an "out/" folder which was generated automatically in the directory you were in when you ran the command.
+The build takes roughly 10 to 30 minutes depending on your CPU and RAM (about
+25 minutes on a Ryzen 5 3550h with 10 GB of RAM). The ISO is written to an
+`out/` folder that mkarchiso creates in the directory you ran the command
+from.
 
-To then run the completed ISO, given you're in the same directory as when running the command from before, run this:
+## Testing
 
-run_archiso out/Wackepludding-OS-xxxx.xx.xx-x86_64.iso
+From the same directory, run the finished ISO in QEMU:
 
-(make sure to have qemu installed)
+```
+run_archiso out/Wackelpudding_OS-xxxx.xx.xx-x86_64.iso
+```
 
+Make sure QEMU is installed.
